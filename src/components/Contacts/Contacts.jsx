@@ -7,7 +7,11 @@ export class Contacts extends Component {
   };
 
   static propTypes = {
-    contacts: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    contacts: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+      PropTypes.array,
+    ]),
     onClick: PropTypes.func.isRequired,
   };
 
